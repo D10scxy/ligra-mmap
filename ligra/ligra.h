@@ -540,9 +540,9 @@ int parallel_main(int argc, char* argv[]) {
       Compute(G,P);
       if(G.transposed) G.transpose();
       for(int r=0;r<rounds;r++) {
-        startTime();
+        // startTime();
         Compute(G,P);
-        nextTime("Running time");
+        // nextTime("Running time");
         if(G.transposed) G.transpose();
       }
       G.del();
